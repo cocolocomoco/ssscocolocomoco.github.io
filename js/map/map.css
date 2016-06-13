@@ -1,0 +1,467 @@
+/* ========================================================
+    General
+   ======================================================== */
+
+h1 {
+  font-weight: normal;
+  font-family: 'Gotham-Bold';
+}
+
+h2 {
+  font-weight: normal;
+  font-family: 'Gotham-Book';
+}
+
+li {
+  list-style-type: none;
+}
+
+
+
+/* ========================================================
+    Popup styles
+   ======================================================== */
+
+#map-marker-tooltip,
+#map-cluster-tooltip {
+  display: none;
+  overflow: hidden;
+  line-height: 1.35;
+  max-height: 330px;
+  text-align: center;
+}
+
+#map-marker-tooltip {
+  padding-left: 25px;
+  width: 268px;
+}
+
+#map-marker-tooltip ul li:before,
+#map-cluster-tooltip ul li:before {
+  display: none !important;
+}
+
+.gm-style-iw {
+  top: 0!important;
+  left: 0!important;
+  width: 320px!important;
+}
+
+.gm-style-iw > div {
+  width: 270px!important;
+  overflow: visible!important;
+}
+
+#map-cluster-tooltip {
+  padding-left: 0px;
+  width: 320px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#map-cluster-tooltip .list {
+  padding: 0px;
+  margin: 0px;
+}
+
+#map-cluster-tooltip h1,
+#map-marker-tooltip h1 {
+  color: #fd7539;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#map-cluster-tooltip h2,
+#map-marker-tooltip h2 {
+  color: #9b9b9b;
+  font-size: 10px;
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+#map-marker-tooltip .pill {
+  background-color: #f7ba3b;
+  min-width: 70px;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+}
+
+#map-marker-tooltip .bio {
+  margin-bottom: 0px;
+}
+
+#map-marker-tooltip img.avatar {
+  vertical-align: middle;
+  display: block;
+  border-radius: 40px;
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+}
+
+#map-cluster-tooltip {
+  list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#map-cluster-tooltip li {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e4e4;
+}
+
+#map-cluster-tooltip a {
+  padding-top: 10px;
+  margin-bottom: 0px;
+  height: 65px;
+}
+
+#map-cluster-tooltip li:last-child {
+  border-bottom: 0px;
+}
+
+#map-cluster-tooltip img.avatar {
+  vertical-align: middle;
+  display: block;
+  position: relative;
+  float: left;
+  border-radius: 27.5px;
+  width: 55px;
+  height: 55px;
+  margin: 0px 10px 10px 15px;
+}
+
+#map-cluster-tooltip h1,
+#map-cluster-tooltip h2 {
+  display: block;
+  text-align: left;
+}
+
+#map-cluster-tooltip h1 {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+img[src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"],
+img[src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"] {
+  /*display: none;*/
+}
+
+a .next-arrow {
+  position: absolute;
+  top: 23px;
+  right: 15px;
+  background-image: url(/images/icons/btn-next.svg);
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background-color: rgba(229, 228, 228, 0.2);
+  border: 1px solid #dadada;
+  background-size: 7px 12px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+#map-cluster-tooltip a {
+  text-decoration: none !important;
+  position: relative;
+  display: block;
+}
+
+/** =========================================
+      Buttons
+=============================================*/
+.btn {
+  min-width: 70px;
+  height: 24px;
+  font-size: 14px;
+  padding: 8px 22px;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.btn-yellow {
+  background-color: #f7ba3b;
+}
+
+/** =========================================
+      Header
+=============================================*/
+
+header {
+  padding-bottom: 15px;
+}
+
+header h1 {
+  color: #f94c00;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+header li {
+  display: inline-block;
+  text-align: center;
+}
+
+
+
+/* TODO: kill these pulsate animation */
+
+/** =========================================
+      Pulsating animations
+=============================================*/
+
+@-moz-keyframes pulsate {
+  from {
+    -webkit-transform: scale(.7);
+    opacity: .2;
+  }
+  25% {
+    -webkit-transform: scale(1);
+    opacity: .6;
+  }
+  50% {
+    -webkit-transform: scale(1.6);
+    opacity: .6;
+  }
+  to {
+    -webkit-transform: scale(.7);
+    opacity: .2;
+  }
+}
+
+@-webkit-keyframes pulsate {
+  from {
+    -webkit-transform: scale(.7);
+    opacity: .1;
+  }
+  25% {
+    -webkit-transform: scale(1.3);
+    opacity: .3;
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    opacity: .2;
+  }
+  to {
+    -webkit-transform: scale(.7);
+    opacity: .1;
+  }
+}
+
+div.cluster,
+div.marker {
+  position: absolute;
+}
+
+div.cluster > div.label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  z-index: 301;
+}
+
+div.cluster > div,
+div.marker > div {
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  /* TODO: explore using these in the svg font? */
+  background-image: url(/images/icons/pin-orange.svg);
+  background-size: contain;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  z-index: 300;
+}
+
+div.cluster > div.animated {
+  height: 40px;
+  width: 40px;
+  /* TODO: explore using these in the svg font? */
+  background-image: url(/images/icons/radar-orange.svg);
+  background-size: contain;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  z-index: 299;
+}
+
+div.marker > div.animated {
+  height: 20px;
+  width: 20px;
+  /* TODO: explore using these in the svg font? */
+  background-image: url(/images/icons/radar-orange.svg);
+  background-size: contain;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  z-index: 299;
+}
+
+div.marker-selected > div.animated {
+  /* TODO: explore using these in the svg font? */
+  /*background-image: url(/images/icons/active-pin.svg);*/
+  height: 30px;
+  width: 30px;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+div.marker-selected > div {
+  /* TODO: explore using these in the svg font? */
+  background-image: url(/images/icons/pin-selected.svg);
+}
+
+div.marker,
+div.marker > div {
+  height: 20px;
+  width: 20px;
+}
+
+div.cluster {
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+div.marker {
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+
+/*sort of random transitions*/
+
+.marker-anim-1 {
+  -moz-animation: pulsate 1.1s cubic-bezier(0.55, -0.15, 0.17, 0.74) infinite;
+  -webkit-animation: pulsate 1.1s cubic-bezier(0.55, -0.15, 0.17, 0.74) infinite;
+}
+
+.marker-anim-2 {
+  -moz-animation: pulsate 2s cubic-bezier(0.55, -0.15, 0.17, 0.74) infinite;
+  -webkit-animation: pulsate 2s cubic-bezier(0.55, -0.15, 0.17, 0.74) infinite;
+}
+
+.marker-anim-3 {
+  -moz-animation: pulsate 1.7s cubic-bezier(0.55, -0.15, 0.17, 0.74) infinite;
+  -webkit-animation: pulsate 1.7s cubic-bezier(0.55, -0.15, 0.17, 0.74) infinite;
+}
+
+
+/** =========================================
+      Sidebar
+=============================================*/
+
+.sidebar {
+  position: absolute;
+  width: 380px;
+  top: 0;
+  right: 0;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 29px 3px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 0px 29px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 29px 3px rgba(0, 0, 0, 0.08);
+  overflow-y: scroll;
+  display: none;
+}
+
+.sidebar .content {
+  padding: 0px 20px 100px 20px;
+}
+.closemembermap , .infomembermap{
+	width: 100%;
+    display: inline-block;
+}
+
+.sidebar .close {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-transform: uppercase;
+  width: 45px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  margin: auto;
+}
+
+.sidebar .avatar {
+  border-radius: 77.2px;
+  width: 145px;
+  height: 145px;
+  margin: 30px;
+}
+
+.sidebar h1 {
+  color: #6B6D76;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.sidebar h2 {
+  color: #A1A0AA;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.sidebar .location {
+  color: #00B1F1;
+  margin: 12px 0;
+  padding: 0;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.sidebar .pin {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.sidebar .text-1 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #A0A3AD;
+}
+
+.sidebar .text-2 {
+  font-size: 18px;
+  color: #A0A3AD;
+}
+
+.join, .join:hover, .join:active, .join:focus {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 80px;
+  width: 380px;
+  border: none;
+  color: #fff;
+  background-color: #F94C04;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 80px;
+  text-decoration: none;
+}

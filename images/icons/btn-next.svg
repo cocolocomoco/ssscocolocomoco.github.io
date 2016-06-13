@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="38px" viewBox="0 0 22 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: bin/sketchtool 1.4 (305) - http://www.bohemiancoding.com/sketch -->
+    <title>btn-next@0.5x</title>
+    <desc>Created with bin/sketchtool.</desc>
+    <defs></defs>
+    <g id="settings" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-1935.000000, -275.000000)" id="screen" fill="#A7A7A7">
+            <g sketch:type="MSLayerGroup" transform="translate(963.000000, 150.000000)">
+                <g id="account/overview/balances" sketch:type="MSShapeGroup">
+                    <g id="notificationLine" transform="translate(0.000000, 96.000000)">
+                        <path d="M975.826938,47.9920817 L993.536303,31.7120233 C994.154566,31.0943947 994.154566,30.0808502 993.536303,29.4632215 C992.918041,28.8455928 991.914347,28.8455928 991.297658,29.4632215 L972.449305,46.7884976 C972.120509,47.1210669 971.978923,47.5644926 972.00252,47.9920817 C971.978923,48.4355074 972.120509,48.8789331 972.449305,49.2115024 L991.297658,66.5367785 C991.914347,67.1544072 992.918041,67.1544072 993.536303,66.5367785 C994.154566,65.9033132 994.154566,64.9056053 993.536303,64.2879767 L975.826938,47.9920817" id="btn-next" transform="translate(983.000000, 48.000000) rotate(-180.000000) translate(-983.000000, -48.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
